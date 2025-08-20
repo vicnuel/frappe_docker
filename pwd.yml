@@ -126,7 +126,7 @@ services:
       - logs:/home/frappe/frappe-bench/logs
     ports:
       - "8082:8080"
-      # porta de saida: 8080
+    # porta de saida: 8080
     # porta interna: 8081
 
   queue-long:
