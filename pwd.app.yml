@@ -1,0 +1,34 @@
+version: "3"
+
+services:
+  backend:
+    volumes:
+      - ./nfe_nfce_erpnext:/home/frappe/frappe-bench/apps/nfe_nfce_erpnext
+
+  configurator:
+    volumes:
+      - ./nfe_nfce_erpnext:/home/frappe/frappe-bench/apps/nfe_nfce_erpnext
+
+  create-site:
+    volumes:
+      - ./nfe_nfce_erpnext:/home/frappe/frappe-bench/apps/nfe_nfce_erpnext
+
+  frontend:
+    volumes:
+      - ./nfe_nfce_erpnext:/home/frappe/frappe-bench/apps/nfe_nfce_erpnext
+
+  queue-long:
+    volumes:
+      - ./nfe_nfce_erpnext:/home/frappe/frappe-bench/apps/nfe_nfce_erpnext
+
+  queue-short:
+    volumes:
+      - ./nfe_nfce_erpnext:/home/frappe/frappe-bench/apps/nfe_nfce_erpnext
+
+  scheduler:
+    volumes:
+      - ./nfe_nfce_erpnext:/home/frappe/frappe-bench/apps/nfe_nfce_erpnext
+
+  websocket:
+    volumes:
+      - ./nfe_nfce_erpnext:/home/frappe/frappe-bench/apps/nfe_nfce_erpnext

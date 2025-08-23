@@ -4,6 +4,12 @@ Este guia mostra como instalar o módulo `nfe_nfce_erpnext` em um ambiente ERPNe
 
 ---
 
+Para automatizar o processo, basta subir o ambiente com:
+
+docker compose -f pwd.base.yml up -d
+Após o site estar criado, rode: docker compose -f pwd.base.yml -f pwd.app.yml up -d
+Instale o app no site com o comando bench.
+
 ## 1. Copie o app para o servidor
 
 No servidor de produção, coloque a pasta `nfe_nfce_erpnext` dentro do diretório onde está seu `docker-compose.yml` (ou equivalente, como `pwd.yml`).
@@ -52,7 +58,7 @@ Execute:
 
 ```sh
 docker compose exec backend bash
-bench --site nome-do-seu-site install-app nfe_nfce_erpnext
+bench --site frontend install-app nfe_nfce_erpnext
 exit
 ```
 
