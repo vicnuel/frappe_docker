@@ -46,7 +46,7 @@ services:
     volumes:
       - sites:/home/frappe/frappe-bench/sites
       - logs:/home/frappe/frappe-bench/logs
-      # - ./nfe_nfce_erpnext:/home/frappe/frappe-bench/apps/nfe_nfce_erpnext
+      - ./nfe_nfce_erpnext:/home/frappe/frappe-bench/apps/nfe_nfce_erpnext
 
   create-site:
     image: frappe/erpnext:v15.75.1
@@ -58,7 +58,7 @@ services:
     volumes:
       - sites:/home/frappe/frappe-bench/sites
       - logs:/home/frappe/frappe-bench/logs
-      # - ./nfe_nfce_erpnext:/home/frappe/frappe-bench/apps/nfe_nfce_erpnext
+      - ./nfe_nfce_erpnext:/home/frappe/frappe-bench/apps/nfe_nfce_erpnext
     entrypoint:
       - bash
       - -c
@@ -127,7 +127,7 @@ services:
     volumes:
       - sites:/home/frappe/frappe-bench/sites
       - logs:/home/frappe/frappe-bench/logs
-      # - ./nfe_nfce_erpnext:/home/frappe/frappe-bench/apps/nfe_nfce_erpnext
+      - ./nfe_nfce_erpnext:/home/frappe/frappe-bench/apps/nfe_nfce_erpnext
     ports:
       - "8082:8080"
     # porta de saida: 8080
@@ -148,7 +148,7 @@ services:
     volumes:
       - sites:/home/frappe/frappe-bench/sites
       - logs:/home/frappe/frappe-bench/logs
-      # - ./nfe_nfce_erpnext:/home/frappe/frappe-bench/apps/nfe_nfce_erpnext
+      - ./nfe_nfce_erpnext:/home/frappe/frappe-bench/apps/nfe_nfce_erpnext
 
   queue-short:
     image: frappe/erpnext:v15.75.1
@@ -165,7 +165,7 @@ services:
     volumes:
       - sites:/home/frappe/frappe-bench/sites
       - logs:/home/frappe/frappe-bench/logs
-      # - ./nfe_nfce_erpnext:/home/frappe/frappe-bench/apps/nfe_nfce_erpnext
+      - ./nfe_nfce_erpnext:/home/frappe/frappe-bench/apps/nfe_nfce_erpnext
 
   redis-queue:
     image: redis:6.2-alpine
@@ -198,7 +198,7 @@ services:
     volumes:
       - sites:/home/frappe/frappe-bench/sites
       - logs:/home/frappe/frappe-bench/logs
-      # - ./nfe_nfce_erpnext:/home/frappe/frappe-bench/apps/nfe_nfce_erpnext
+      - ./nfe_nfce_erpnext:/home/frappe/frappe-bench/apps/nfe_nfce_erpnext
 
   websocket:
     image: frappe/erpnext:v15.75.1
@@ -213,7 +213,7 @@ services:
     volumes:
       - sites:/home/frappe/frappe-bench/sites
       - logs:/home/frappe/frappe-bench/logs
-      # - ./nfe_nfce_erpnext:/home/frappe/frappe-bench/apps/nfe_nfce_erpnext
+      - ./nfe_nfce_erpnext:/home/frappe/frappe-bench/apps/nfe_nfce_erpnext
 
 volumes:
   db-data:
