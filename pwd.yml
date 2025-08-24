@@ -11,7 +11,7 @@ services:
     volumes:
       - sites:/home/frappe/frappe-bench/sites
       - logs:/home/frappe/frappe-bench/logs
-      # - ./nfe_nfce_erpnext:/home/frappe/frappe-bench/apps/nfe_nfce_erpnext
+      - ./nfe_nfce_erpnext:/home/frappe/frappe-bench/apps/nfe_nfce_erpnext
     environment:
       DB_HOST: db
       DB_PORT: "3306"
